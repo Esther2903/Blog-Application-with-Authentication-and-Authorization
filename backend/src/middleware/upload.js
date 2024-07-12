@@ -6,8 +6,8 @@ const statusStorage = multer.diskStorage({
     destination: function(req, file, cb){
         let folder = '';
 
-        if(req.baseUrl.includes('/status')){
-            folder = './public/statusFiles/';
+        if(req.baseUrl.includes('/articles')){
+            folder = './public/articlesFiles/';
         } 
         else if(req.baseUrl.includes('/users')){
             folder = './public/profilePictures/';
